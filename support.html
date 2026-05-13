@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soporte | Joint4Win</title>
-  <meta name="description" content="Centro de soporte de Joint4Win para cuenta, torneos, pagos y soporte técnico." />
+  <meta name="description" content="Soporte oficial de Joint4Win para cuenta, torneos, pagos y problemas técnicos." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -13,15 +13,15 @@
   <script defer src="assets/main.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html" aria-label="Joint4Win Inicio">
+  <header class="site-header reveal">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Joint4Win inicio">
         <img src="assets/logo.png" alt="Joint4Win" height="36" />
       </a>
-      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav id="nav-links" class="nav-links">
         <a href="index.html#features">Características</a>
-        <a href="index.html#offers">Ofertas</a>
+        <a href="index.html#pricing">Ofertas</a>
         <a href="index.html#how">Cómo funciona</a>
         <a href="support.html">Soporte</a>
         <a class="btn btn-primary" href="https://play.joint4win.com" target="_blank" rel="noopener noreferrer">▶ Jugar ahora</a>
@@ -33,116 +33,117 @@
     <section class="page-hero reveal">
       <div class="container">
         <h1>Centro de Soporte</h1>
-        <p>Resolvemos dudas de cuenta, torneos, pagos y problemas técnicos para que vuelvas al juego cuanto antes.</p>
-        <div class="search-wrap">
-          <input id="support-search" class="search-input" type="search" placeholder="Buscar en preguntas frecuentes..." />
-        </div>
+        <p>Atendemos incidencias de cuenta, torneos, pagos y soporte técnico en el menor tiempo posible.</p>
+        <div class="status-bar"><span class="status-dot"></span>Todos los sistemas operativos · Respuesta &lt; 2 horas</div>
+        <div class="search-wrap"><input class="search-input" type="search" placeholder="Buscar respuestas rápidas..." /></div>
       </div>
     </section>
 
     <section class="section" style="padding-top:1rem;">
-      <div class="container support-grid">
-        <div class="channel-grid">
-          <article class="channel-card card reveal"><h3>Soporte general</h3><p>Consultas de cuenta, acceso y configuración inicial.</p><a href="mailto:soporte@joint4win.com">soporte@joint4win.com</a></article>
-          <article class="channel-card card reveal"><h3>Pagos</h3><p>Facturación, reembolsos, renovaciones y suscripciones premium.</p><a href="mailto:pagos@joint4win.com">pagos@joint4win.com</a></article>
-          <article class="channel-card card reveal"><h3>Apelaciones</h3><p>Revisión de sanciones, bloqueos y disputas de torneo.</p><a href="mailto:apelaciones@joint4win.com">apelaciones@joint4win.com</a></article>
-          <article class="channel-card card reveal"><h3>Equipos</h3><p>Soporte dedicado para ligas y cuentas Team Champion.</p><a href="mailto:equipos@joint4win.com">equipos@joint4win.com</a></article>
+      <div class="container">
+        <div class="contact-grid reveal">
+          <article class="contact-card card"><h3>Soporte general</h3><p>Cuenta, acceso y configuración inicial.</p><a href="mailto:support@joint4win.com">support@joint4win.com</a></article>
+          <article class="contact-card card"><h3>Pagos</h3><p>Suscripciones, cobros y reembolsos.</p><a href="mailto:payments@joint4win.com">payments@joint4win.com</a></article>
+          <article class="contact-card card"><h3>Apelaciones</h3><p>Revisión de sanciones y disputas.</p><a href="mailto:appeals@joint4win.com">appeals@joint4win.com</a></article>
+          <article class="contact-card card"><h3>Equipos</h3><p>Atención para Team Champion.</p><a href="mailto:teams@joint4win.com">teams@joint4win.com</a></article>
         </div>
 
-        <section class="card reveal" style="padding:1rem;">
-          <h2 class="section-title" style="margin-bottom:0.7rem; font-size:2rem;">FAQ por categoría</h2>
-          <div class="tabs">
-            <button class="tab-btn active" type="button" data-tab="cuenta">Mi Cuenta</button>
-            <button class="tab-btn" type="button" data-tab="torneos">Torneos</button>
-            <button class="tab-btn" type="button" data-tab="pagos">Pagos</button>
-            <button class="tab-btn" type="button" data-tab="tecnico">Técnico</button>
-          </div>
+        <section class="section" style="padding:2rem 0 1rem;">
+          <div class="card reveal" style="padding:1rem;">
+            <h2 class="section-title" style="font-size:2rem; text-align:left; margin-bottom:0.7rem;">FAQ por categoría</h2>
+            <div class="tabs">
+              <button class="tab-btn active" type="button" data-tab="cuenta">Mi Cuenta</button>
+              <button class="tab-btn" type="button" data-tab="torneos">Torneos</button>
+              <button class="tab-btn" type="button" data-tab="pagos">Pagos</button>
+              <button class="tab-btn" type="button" data-tab="tecnico">Técnico</button>
+            </div>
 
-          <div class="faq-panel active" data-panel="cuenta">
-            <article class="faq-item card"><button class="faq-question" type="button">¿Cómo cambio mi gamertag? <span>+</span></button><div class="faq-answer"><p>Ve a Perfil > Configuración y actualiza tu gamertag una vez cada 30 días.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Olvidé mi contraseña, qué hago? <span>+</span></button><div class="faq-answer"><p>Usa "Recuperar cuenta" en login para recibir un enlace temporal.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Puedo vincular redes sociales? <span>+</span></button><div class="faq-answer"><p>Sí, desde Seguridad puedes conectar Google, Apple o Discord.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Cómo activo autenticación 2FA? <span>+</span></button><div class="faq-answer"><p>En Seguridad selecciona "Doble verificación" y sigue el asistente.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Cómo elimino mi cuenta? <span>+</span></button><div class="faq-answer"><p>Solicítalo desde Privacidad y nuestro equipo confirma en menos de 72 horas.</p></div></article>
-          </div>
+            <div class="faq-panel active" data-panel="cuenta">
+              <article class="faq-item card"><h4>¿Cómo cambio mi gamertag?</h4><p>Desde Perfil > Configuración puedes actualizarlo una vez por periodo.</p></article>
+              <article class="faq-item card"><h4>¿Cómo recupero mi contraseña?</h4><p>Usa la opción "Recuperar cuenta" en el login para recibir un enlace seguro.</p></article>
+              <article class="faq-item card"><h4>¿Puedo activar doble verificación?</h4><p>Sí, está disponible desde Seguridad para proteger tu cuenta.</p></article>
+              <article class="faq-item card"><h4>¿Cómo elimino mi cuenta?</h4><p>Solicítalo en soporte general y validaremos identidad antes de proceder.</p></article>
+            </div>
 
-          <div class="faq-panel" data-panel="torneos">
-            <article class="faq-item card"><button class="faq-question" type="button">¿Dónde veo próximos torneos? <span>+</span></button><div class="faq-answer"><p>En la pestaña "Eventos" puedes filtrar por juego, horario y nivel.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Qué pasa si me desconecto? <span>+</span></button><div class="faq-answer"><p>El sistema permite reconexión breve; ausencias largas pueden marcar derrota.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Cómo reporto un rival? <span>+</span></button><div class="faq-answer"><p>Desde el historial del match selecciona "Reportar" y adjunta evidencia.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Puedo jugar torneos en equipo? <span>+</span></button><div class="faq-answer"><p>Sí, con plan Team Champion puedes registrar squads de hasta 5 integrantes.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Cómo sube mi ranking? <span>+</span></button><div class="faq-answer"><p>Ganar partidas rankeadas y mantener consistencia mejora tu score competitivo.</p></div></article>
-          </div>
+            <div class="faq-panel" data-panel="torneos">
+              <article class="faq-item card"><h4>¿Dónde veo próximos torneos?</h4><p>En la pestaña Eventos puedes filtrar por juego, hora y nivel.</p></article>
+              <article class="faq-item card"><h4>¿Qué ocurre si me desconecto?</h4><p>Existe ventana breve de reconexión antes de aplicar derrota técnica.</p></article>
+              <article class="faq-item card"><h4>¿Cómo reporto una partida?</h4><p>Desde el historial del match puedes abrir una disputa con evidencia.</p></article>
+              <article class="faq-item card"><h4>¿Hay torneos por equipo?</h4><p>Sí, en el plan Team Champion puedes competir con hasta 5 jugadores.</p></article>
+            </div>
 
-          <div class="faq-panel" data-panel="pagos">
-            <article class="faq-item card"><button class="faq-question" type="button">¿Cuándo se cobra la suscripción? <span>+</span></button><div class="faq-answer"><p>El cobro ocurre al inicio de cada ciclo mensual según tu fecha de alta.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Cómo solicito un reembolso? <span>+</span></button><div class="faq-answer"><p>Abre un ticket en categoría pagos dentro de las primeras 48 horas.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Qué métodos aceptan? <span>+</span></button><div class="faq-answer"><p>Tarjetas internacionales, wallets móviles y métodos locales habilitados.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Puedo cambiar de plan? <span>+</span></button><div class="faq-answer"><p>Sí, el upgrade es inmediato; downgrade aplica al siguiente ciclo.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Cómo retiro premios? <span>+</span></button><div class="faq-answer"><p>Configura una cuenta de pago validada en tu billetera y solicita retiro.</p></div></article>
-          </div>
+            <div class="faq-panel" data-panel="pagos">
+              <article class="faq-item card"><h4>¿Cuándo se cobra mi suscripción?</h4><p>Al inicio de cada ciclo mensual de acuerdo con tu fecha de alta.</p></article>
+              <article class="faq-item card"><h4>¿Cómo solicito un reembolso?</h4><p>Abre un ticket de pagos dentro del periodo de elegibilidad.</p></article>
+              <article class="faq-item card"><h4>¿Qué métodos de pago aceptan?</h4><p>Tarjetas internacionales y billeteras móviles según región.</p></article>
+              <article class="faq-item card"><h4>¿Cómo retiro mis premios?</h4><p>Configura una cuenta validada en tu billetera y solicita retiro.</p></article>
+            </div>
 
-          <div class="faq-panel" data-panel="tecnico">
-            <article class="faq-item card"><button class="faq-question" type="button">La app no abre, ¿qué hago? <span>+</span></button><div class="faq-answer"><p>Actualiza a la última versión y reinicia el dispositivo antes de reintentar.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">Tengo lag en partida <span>+</span></button><div class="faq-answer"><p>Conéctate a red estable de 5 GHz y cierra apps en segundo plano.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">No recibo notificaciones <span>+</span></button><div class="faq-answer"><p>Verifica permisos de notificación y modo ahorro de batería del sistema.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">Error al actualizar perfil <span>+</span></button><div class="faq-answer"><p>Prueba desde otra red y evita caracteres especiales no permitidos.</p></div></article>
-            <article class="faq-item card"><button class="faq-question" type="button">¿Cómo reporto un bug? <span>+</span></button><div class="faq-answer"><p>Usa este formulario con capturas, modelo de dispositivo y versión de app.</p></div></article>
+            <div class="faq-panel" data-panel="tecnico">
+              <article class="faq-item card"><h4>La app no abre, ¿qué hago?</h4><p>Actualiza a la última versión y reinicia tu dispositivo.</p></article>
+              <article class="faq-item card"><h4>Tengo lag en partida</h4><p>Usa red estable y cierra aplicaciones en segundo plano.</p></article>
+              <article class="faq-item card"><h4>No llegan notificaciones</h4><p>Revisa permisos del sistema y restricciones de batería.</p></article>
+              <article class="faq-item card"><h4>¿Cómo reporto un bug?</h4><p>Envíanos formulario con capturas y versión de app/dispositivo.</p></article>
+            </div>
           </div>
         </section>
 
-        <section id="contacto" class="card contact-form reveal" style="padding:1rem;">
-          <h2 class="section-title" style="margin-bottom:0.7rem; font-size:2rem;">Contáctanos</h2>
-          <form id="support-form" class="form-grid">
-            <div class="form-row">
-              <label>Nombre<input type="text" name="nombre" required /></label>
-              <label>Email<input type="email" name="email" required /></label>
+        <section id="contacto" class="section" style="padding-top:0;">
+          <div class="card reveal" style="padding:1rem;">
+            <h2 class="section-title" style="font-size:2rem; text-align:left; margin-bottom:0.7rem;">Formulario de contacto</h2>
+            <div id="support-form-wrap">
+              <form id="support-form" class="form-grid">
+                <div class="form-row">
+                  <label>Nombre<input type="text" name="nombre" required /></label>
+                  <label>Email<input type="email" name="email" required /></label>
+                </div>
+                <div class="form-row">
+                  <label>Gamertag<input type="text" name="gamertag" required /></label>
+                  <label>Categoría
+                    <select name="categoria" required>
+                      <option value="">Selecciona una opción</option>
+                      <option>Mi Cuenta</option>
+                      <option>Torneos</option>
+                      <option>Pagos</option>
+                      <option>Técnico</option>
+                    </select>
+                  </label>
+                </div>
+                <label>Asunto<input type="text" name="asunto" required /></label>
+                <label>Mensaje<textarea name="mensaje" required></textarea></label>
+                <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+              </form>
             </div>
-            <div class="form-row">
-              <label>Gamertag<input type="text" name="gamertag" required /></label>
-              <label>Categoría
-                <select name="categoria" required>
-                  <option value="">Selecciona una opción</option>
-                  <option>Soporte general</option>
-                  <option>Pagos</option>
-                  <option>Apelaciones</option>
-                  <option>Equipos</option>
-                </select>
-              </label>
-            </div>
-            <label>Asunto<input type="text" name="asunto" required /></label>
-            <label>Mensaje<textarea name="mensaje" required></textarea></label>
-            <button class="btn btn-primary" type="submit">Enviar solicitud</button>
-            <p id="form-success" class="form-success">Tu solicitud fue enviada correctamente. Te responderemos pronto.</p>
-          </form>
+            <div id="support-success" class="success-box">Tu solicitud fue enviada correctamente. Nuestro equipo te responderá pronto.</div>
+          </div>
         </section>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer reveal">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <img src="assets/logo.png" alt="Joint4Win" height="36" style="height:36px; width:auto; margin-bottom:0.65rem;" />
-          <p>La arena competitiva donde tus habilidades valen premios reales.</p>
+          <img src="assets/logo.png" alt="Joint4Win" height="32" style="height:32px; width:auto; margin-bottom:0.7rem;" />
+          <p>La plataforma de torneos en tiempo real para gamers de alto nivel.</p>
         </div>
         <div class="footer-col">
           <h4>Producto</h4>
           <a href="index.html#features">Características</a>
-          <a href="index.html#offers">Ofertas</a>
+          <a href="index.html#pricing">Ofertas</a>
           <a href="index.html#how">Cómo funciona</a>
         </div>
         <div class="footer-col">
           <h4>Empresa</h4>
           <a href="support.html">Soporte</a>
           <a href="terms.html">Términos</a>
-          <a href="support.html#contacto">Contacto</a>
+          <a href="#contacto">Contacto</a>
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
-          <a href="terms.html#privacy">Política de privacidad</a>
-          <a href="terms.html#cookies">Política de cookies</a>
+          <a href="terms.html#privacy">Privacidad</a>
+          <a href="terms.html#cookies">Cookies</a>
           <a href="terms.html">Condiciones</a>
         </div>
       </div>

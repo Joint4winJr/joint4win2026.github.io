@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joint4Win | Compite, Gana, Domina</title>
-  <meta name="description" content="Joint4Win: torneos en tiempo real, premios en efectivo y rankings globales para gamers competitivos." />
+  <title>Joint4Win | Compite. Gana. Domina.</title>
+  <meta name="description" content="Joint4Win: torneos en tiempo real, premios en efectivo y ranking global para jugadores competitivos." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -13,16 +13,16 @@
   <script defer src="assets/main.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html" aria-label="Joint4Win Inicio">
+  <header class="site-header reveal">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Joint4Win inicio">
         <img src="assets/logo.png" alt="Joint4Win" height="36" />
       </a>
-      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav">
-        <a href="index.html#features">Características</a>
-        <a href="index.html#offers">Ofertas</a>
-        <a href="index.html#how">Cómo funciona</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#features">Características</a>
+        <a href="#pricing">Ofertas</a>
+        <a href="#how">Cómo funciona</a>
         <a href="support.html">Soporte</a>
         <a class="btn btn-primary" href="https://play.joint4win.com" target="_blank" rel="noopener noreferrer">▶ Jugar ahora</a>
       </nav>
@@ -30,15 +30,15 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero reveal">
       <canvas id="stars-canvas" aria-hidden="true"></canvas>
-      <div class="hero-content reveal">
-        <h1>COMPITE. <span class="accent">GANA.</span> DOMINA.</h1>
-        <p>Entra a torneos en tiempo real, escala en el ranking global y convierte tus habilidades en premios reales cada semana.</p>
+      <div class="hero-content">
+        <h1 class="hero-title">COMPITE. <span class="gold">GANA.</span> DOMINA.</h1>
+        <p class="hero-text">Vive torneos en tiempo real, compite con jugadores de todo el mundo y convierte tus mejores partidas en premios reales.</p>
 
-        <article class="promo-banner card">
-          <p class="promo-title">🔥 3 MESES GRATIS EN PREMIUM — Oferta de lanzamiento</p>
-          <p>Termina en: <span class="countdown" id="promo-countdown">Cargando...</span></p>
+        <article class="promo-card card">
+          <p class="promo-title">🔥 3 MESES GRATIS EN PREMIUM</p>
+          <p style="margin:0.35rem 0 0; color:var(--muted);">Oferta activa por: <span id="promo-countdown" class="countdown">Cargando...</span></p>
         </article>
 
         <div class="hero-actions">
@@ -50,63 +50,65 @@
       </div>
     </section>
 
-    <section class="section stats-bar">
-      <div class="container stats-grid reveal">
-        <div class="stat-item card"><strong>50K+</strong><span>Jugadores</span></div>
-        <div class="stat-item card"><strong>$2.5M</strong><span>Premios</span></div>
-        <div class="stat-item card"><strong>1,200</strong><span>Torneos/mes</span></div>
-        <div class="stat-item card"><strong>4.9★</strong><span>App Store</span></div>
+    <section class="section reveal">
+      <div class="container stats-grid">
+        <article class="stat-item card"><strong>50K+</strong><span>Jugadores</span></article>
+        <article class="stat-item card"><strong>$2.5M</strong><span>Premios</span></article>
+        <article class="stat-item card"><strong>1,200</strong><span>Torneos/mes</span></article>
+        <article class="stat-item card"><strong>4.9★</strong><span>App Store</span></article>
       </div>
     </section>
 
-    <section id="features" class="section">
+    <section id="features" class="section reveal">
       <div class="container">
-        <h2 class="section-title reveal" style="text-align:center;">Características que te ponen arriba</h2>
+        <h2 class="section-title">Características</h2>
+        <p class="section-subtitle">Herramientas y modos competitivos diseñados para mejorar tu rendimiento en cada torneo.</p>
         <div class="features-grid">
-          <article class="feature-card card reveal"><h3 class="feature-title">⚡ Torneos en tiempo real</h3><p class="feature-text">Partidas sincronizadas con resultados instantáneos y clasificación dinámica.</p></article>
-          <article class="feature-card card reveal"><h3 class="feature-title">🏆 Premios en efectivo</h3><p class="feature-text">Compite por bolsas semanales y recompensas exclusivas para top players.</p></article>
-          <article class="feature-card card reveal"><h3 class="feature-title">📊 Estadísticas avanzadas</h3><p class="feature-text">Monitorea win-rate, evolución por torneo y desempeño por modo de juego.</p></article>
-          <article class="feature-card card reveal"><h3 class="feature-title">🛡️ Anti-cheat certificado</h3><p class="feature-text">Sistemas de validación multicapa para mantener competiciones limpias.</p></article>
-          <article class="feature-card card reveal"><h3 class="feature-title">🌎 Ranking global</h3><p class="feature-text">Sube posiciones por región y compite por entrar al top mundial cada mes.</p></article>
-          <article class="feature-card card reveal"><h3 class="feature-title">👥 Torneos en equipo</h3><p class="feature-text">Forma squads, coordina estrategias y domina ligas cooperativas.</p></article>
+          <article class="feature-card card"><h3>⚡ Torneos en tiempo real</h3><p>Resultados en vivo y emparejamiento inteligente con baja latencia.</p></article>
+          <article class="feature-card card"><h3>🏆 Premios en efectivo</h3><p>Bolsas semanales y eventos premium con recompensas exclusivas.</p></article>
+          <article class="feature-card card"><h3>📊 Estadísticas avanzadas</h3><p>Analiza tu win-rate, evolución y desempeño por formato competitivo.</p></article>
+          <article class="feature-card card"><h3>🛡️ Anti-cheat certificado</h3><p>Sistema de validación multicapa para mantener una arena justa.</p></article>
+          <article class="feature-card card"><h3>🌎 Ranking global</h3><p>Sube posiciones por región y compite por el top mundial.</p></article>
+          <article class="feature-card card"><h3>👥 Torneos en equipo</h3><p>Construye squads, coordina estrategias y domina ligas cooperativas.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="offers" class="section">
+    <section id="pricing" class="section reveal">
       <div class="container">
-        <h2 class="section-title reveal" style="text-align:center;">Planes para cada nivel competitivo</h2>
-        <div class="offers-grid">
-          <article class="offer-card card reveal">
+        <h2 class="section-title">Ofertas</h2>
+        <p class="section-subtitle">Elige el plan ideal para tu nivel de juego y tus objetivos competitivos.</p>
+        <div class="pricing-grid">
+          <article class="price-card card">
             <h3>Free</h3>
-            <p class="price">$0 <span>/mes</span></p>
+            <p class="price-value">$0 <span>/mes</span></p>
             <ul>
-              <li>Acceso básico a torneos diarios</li>
+              <li>Torneos diarios limitados</li>
               <li>Ranking regional</li>
               <li>Soporte estándar</li>
             </ul>
-            <a class="btn btn-ghost" href="https://play.joint4win.com" target="_blank" rel="noopener noreferrer">Comenzar gratis</a>
+            <a class="btn btn-ghost" href="https://play.joint4win.com" target="_blank" rel="noopener noreferrer">Comenzar</a>
           </article>
 
-          <article class="offer-card offer-featured card reveal">
-            <span class="badge">3 meses gratis</span>
+          <article class="price-card popular card">
+            <span class="badge">MÁS POPULAR</span>
             <h3>Pro Competitor</h3>
-            <p class="price">$9.99 <span>/mes</span></p>
+            <p class="price-value">$9.99 <span>/mo</span></p>
             <ul>
               <li>Torneos premium ilimitados</li>
               <li>Multiplicador de recompensas</li>
-              <li>Analítica avanzada y coaching AI</li>
+              <li>Analítica avanzada y prioridad en soporte</li>
             </ul>
-            <a class="btn btn-primary" href="https://play.joint4win.com" target="_blank" rel="noopener noreferrer">Activar promoción</a>
+            <a class="btn btn-primary" href="https://play.joint4win.com" target="_blank" rel="noopener noreferrer">Activar Pro</a>
           </article>
 
-          <article class="offer-card card reveal">
+          <article class="price-card card">
             <h3>Team Champion</h3>
-            <p class="price">$39.99 <span>/mes · 5 players</span></p>
+            <p class="price-value">$39.99 <span>/mo</span></p>
             <ul>
-              <li>Gestión completa de equipo</li>
-              <li>Panel compartido de rendimiento</li>
-              <li>Prioridad de soporte y eventos privados</li>
+              <li>Hasta 5 jugadores por equipo</li>
+              <li>Panel compartido de métricas</li>
+              <li>Eventos privados para squads</li>
             </ul>
             <a class="btn btn-ghost" href="support.html">Hablar con ventas</a>
           </article>
@@ -114,73 +116,73 @@
       </div>
     </section>
 
-    <section id="how" class="section">
+    <section id="how" class="section reveal">
       <div class="container">
-        <h2 class="section-title reveal" style="text-align:center;">Cómo funciona</h2>
+        <h2 class="section-title">Cómo funciona</h2>
         <div class="steps">
-          <article class="step card reveal"><span class="step-number">1</span><h3>Regístrate en segundos</h3><p class="feature-text">Crea tu cuenta con email o red social y configura tu gamertag.</p></article>
-          <article class="step card reveal"><span class="step-number">2</span><h3>Únete a un torneo</h3><p class="feature-text">Elige categoría, nivel y formato según tu estilo de juego.</p></article>
-          <article class="step card reveal"><span class="step-number">3</span><h3>Compite en vivo</h3><p class="feature-text">Juega partidas rankeadas con emparejamiento competitivo justo.</p></article>
-          <article class="step card reveal"><span class="step-number">4</span><h3>Cobra tus premios</h3><p class="feature-text">Retira recompensas y desbloquea beneficios premium al escalar.</p></article>
+          <article class="step card"><span>1</span><h3>Crea tu cuenta</h3><p>Regístrate y configura tu gamertag en pocos pasos.</p></article>
+          <article class="step card"><span>2</span><h3>Únete a torneos</h3><p>Selecciona juego, modalidad y nivel competitivo.</p></article>
+          <article class="step card"><span>3</span><h3>Compite en vivo</h3><p>Juega partidas rankeadas con resultados instantáneos.</p></article>
+          <article class="step card"><span>4</span><h3>Gana recompensas</h3><p>Retira premios y desbloquea beneficios premium.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="container">
-        <h2 class="section-title reveal" style="text-align:center;">Lo que dice la comunidad</h2>
-        <div class="testimonials-grid">
-          <article class="testimonial card reveal"><p class="stars">★★★★★</p><p>"La latencia es mínima y los torneos se sienten realmente profesionales."</p><strong>@ShadowRush</strong></article>
-          <article class="testimonial card reveal"><p class="stars">★★★★★</p><p>"Pasé de casual a top 200 global en dos meses usando sus estadísticas."</p><strong>@NovaStriker</strong></article>
-          <article class="testimonial card reveal"><p class="stars">★★★★☆</p><p>"El modo por equipos nos dio estructura para competir como escuadra real."</p><strong>@ApexMamba</strong></article>
+        <h2 class="section-title">Testimonios</h2>
+        <div class="testimonials-grid" style="grid-template-columns:repeat(3,minmax(0,1fr));">
+          <article class="testimonial card"><p style="color:var(--gold-bright); margin-top:0;">★★★★★</p><p>"La experiencia competitiva es fluida y el anti-cheat sí se siente real."</p><strong>@ShadowRush</strong></article>
+          <article class="testimonial card"><p style="color:var(--gold-bright); margin-top:0;">★★★★★</p><p>"Con Pro mejoré mi estrategia con estadísticas y subí al top 300 global."</p><strong>@NovaStrike</strong></article>
+          <article class="testimonial card"><p style="color:var(--gold-bright); margin-top:0;">★★★★☆</p><p>"Nuestro equipo coordinó mejor gracias a los torneos grupales."</p><strong>@ApexMamba</strong></article>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="container">
-        <h2 class="section-title reveal" style="text-align:center;">Preguntas frecuentes</h2>
-        <div class="faq">
-          <article class="faq-item card reveal">
-            <button class="faq-question" type="button" aria-expanded="false">¿Cómo reclamo los 3 meses gratis? <span>+</span></button>
-            <div class="faq-answer"><p>Solo debes crear tu cuenta desde el botón principal; la promoción se aplica automáticamente al plan Pro durante la ventana activa.</p></div>
-          </article>
-          <article class="faq-item card reveal">
-            <button class="faq-question" type="button" aria-expanded="false">¿Puedo cancelar cuando quiera? <span>+</span></button>
-            <div class="faq-answer"><p>Sí. No hay permanencia mínima. Puedes cancelar desde tu panel de suscripción en cualquier momento.</p></div>
-          </article>
-          <article class="faq-item card reveal">
-            <button class="faq-question" type="button" aria-expanded="false">¿Qué métodos de pago aceptan? <span>+</span></button>
-            <div class="faq-answer"><p>Aceptamos tarjetas principales, wallets móviles y métodos locales según tu país.</p></div>
-          </article>
-          <article class="faq-item card reveal">
-            <button class="faq-question" type="button" aria-expanded="false">¿Es compatible con iOS y Android? <span>+</span></button>
-            <div class="faq-answer"><p>Sí. Joint4Win está disponible para ambas plataformas y mantiene progreso sincronizado.</p></div>
-          </article>
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-list">
+          <details class="card">
+            <summary>¿Cómo obtengo los 3 meses gratis en Pro?</summary>
+            <p>Regístrate desde el CTA principal y la promoción se aplicará automáticamente durante la campaña activa.</p>
+          </details>
+          <details class="card">
+            <summary>¿Puedo cancelar mi plan cuando quiera?</summary>
+            <p>Sí. Puedes cancelar en cualquier momento desde tu panel de suscripción sin penalizaciones.</p>
+          </details>
+          <details class="card">
+            <summary>¿Hay torneos para principiantes?</summary>
+            <p>Sí. Existen brackets de entrada para niveles iniciales y crecimiento progresivo.</p>
+          </details>
+          <details class="card">
+            <summary>¿Joint4Win funciona en iOS y Android?</summary>
+            <p>Totalmente. El progreso se sincroniza entre plataformas con tu misma cuenta.</p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="section final-cta">
-      <div class="container card reveal" style="padding: 2.5rem 1rem;">
+    <section class="section final-cta reveal">
+      <div class="container card" style="padding:2.4rem 1rem;">
         <h2>¿LISTO PARA GANAR?</h2>
-        <a class="btn btn-primary" href="https://play.joint4win.com" target="_blank" rel="noopener noreferrer">Empezar ahora</a>
+        <a class="btn btn-primary" href="https://play.joint4win.com" target="_blank" rel="noopener noreferrer">Empieza ahora</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer reveal">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <img src="assets/logo.png" alt="Joint4Win" height="36" style="height:36px; width:auto; margin-bottom:0.65rem;" />
-          <p>La arena competitiva donde tus habilidades valen premios reales.</p>
+          <img src="assets/logo.png" alt="Joint4Win" height="32" style="height:32px; width:auto; margin-bottom:0.7rem;" />
+          <p>La plataforma de torneos en tiempo real para gamers de alto nivel.</p>
         </div>
         <div class="footer-col">
           <h4>Producto</h4>
-          <a href="index.html#features">Características</a>
-          <a href="index.html#offers">Ofertas</a>
-          <a href="index.html#how">Cómo funciona</a>
+          <a href="#features">Características</a>
+          <a href="#pricing">Ofertas</a>
+          <a href="#how">Cómo funciona</a>
         </div>
         <div class="footer-col">
           <h4>Empresa</h4>
@@ -190,8 +192,8 @@
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
-          <a href="terms.html#privacy">Política de privacidad</a>
-          <a href="terms.html#cookies">Política de cookies</a>
+          <a href="terms.html#privacy">Privacidad</a>
+          <a href="terms.html#cookies">Cookies</a>
           <a href="terms.html">Condiciones</a>
         </div>
       </div>
